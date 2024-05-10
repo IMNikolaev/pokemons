@@ -7,6 +7,8 @@ public class Nuzleaf implements Pokemon{
     private double defense;
     private double specialAttack;
     private String name;
+    private boolean isFight = false;
+    private boolean isSleep = false;
 
     public Nuzleaf(String name) {
         this.hp = 70.0;
@@ -19,6 +21,11 @@ public class Nuzleaf implements Pokemon{
     @Override
     public double getHp() {
         return hp;
+    }
+
+    @Override
+    public void setHp(double hp) {
+        this.hp = hp;
     }
 
     @Override
@@ -42,10 +49,12 @@ public class Nuzleaf implements Pokemon{
     }
 
     @Override
-    public void fight() {
+    public boolean fight() {
+        return isFight;
     }
 
     @Override
-    public void sleep() {
+    public boolean sleep() {
+        return isSleep;
     }
 }

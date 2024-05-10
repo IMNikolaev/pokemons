@@ -1,7 +1,6 @@
 package rest_example.entity;
 
 import lombok.ToString;
-
 @ToString
 public class Cottonee implements Pokemon{
     private double hp;
@@ -23,6 +22,10 @@ public class Cottonee implements Pokemon{
     @Override
     public double getHp() {
         return hp;
+    }
+    @Override
+    public void setHp(double hp) {
+        this.hp = hp;
     }
 
     @Override

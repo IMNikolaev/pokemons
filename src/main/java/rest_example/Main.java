@@ -11,8 +11,6 @@ public class Main {
         PokemonRepository pokemonRepository = new PokemonRepository();
         PokemonService pokemonService = new PokemonService(pokemonRepository);
 
-        Pokemon cottonee = new Cottonee("Cottonee");
-        Pokemon passimian = new Passimian("Passimian");
 
         pokemonService.createCottonee("Cottonee");
         pokemonService.createPassimian("Passimian");

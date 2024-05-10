@@ -1,6 +1,8 @@
 package rest_example.entity;
 
+import lombok.ToString;
 
+@ToString
 public class Passimian implements Pokemon{
     private double hp;
     private double attack;
@@ -21,6 +23,10 @@ public class Passimian implements Pokemon{
     @Override
     public double getHp() {
         return hp;
+    }
+    @Override
+    public void setHp(double hp) {
+        this.hp = hp;
     }
 
     @Override
