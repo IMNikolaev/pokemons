@@ -30,6 +30,24 @@ public class PokemonService {
         return passimian;
     }
 
+    public Pokemon createWhimsicott(String name) {
+        Pokemon whimsicott = new Passimian(name);
+        addPokemon(whimsicott);
+        return whimsicott;
+    }
+
+    public Pokemon createSeedot(String name) {
+        Pokemon seedot = new Passimian(name);
+        addPokemon(seedot);
+        return seedot;
+    }
+
+    public Pokemon createNuzleaf(String name) {
+        Pokemon nuzleaf = new Passimian(name);
+        addPokemon(nuzleaf);
+        return nuzleaf;
+    }
+
     private void addPokemon(Pokemon pokemon) {
         pokemonRepository.addPokemon(pokemon);
     }
