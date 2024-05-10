@@ -1,8 +1,6 @@
 package rest_example.service;
 
-import rest_example.entity.Cottonee;
-import rest_example.entity.Passimian;
-import rest_example.entity.Pokemon;
+import rest_example.entity.*;
 import rest_example.repository.PokemonRepository;
 
 import java.util.ArrayList;
@@ -31,19 +29,19 @@ public class PokemonService {
     }
 
     public Pokemon createWhimsicott(String name) {
-        Pokemon whimsicott = new Passimian(name);
+        Pokemon whimsicott = new Whimsicott(name);
         addPokemon(whimsicott);
         return whimsicott;
     }
 
     public Pokemon createSeedot(String name) {
-        Pokemon seedot = new Passimian(name);
+        Pokemon seedot = new Seedot(name);
         addPokemon(seedot);
         return seedot;
     }
 
     public Pokemon createNuzleaf(String name) {
-        Pokemon nuzleaf = new Passimian(name);
+        Pokemon nuzleaf = new Nuzleaf(name);
         addPokemon(nuzleaf);
         return nuzleaf;
     }
