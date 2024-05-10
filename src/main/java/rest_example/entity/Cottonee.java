@@ -1,18 +1,20 @@
 package rest_example.entity;
 
+import lombok.ToString;
 
-public class Passimian implements Pokemon{
+@ToString
+public class Cottonee implements Pokemon{
     private double hp;
     private double attack;
     private double defense;
     private double specialAttack;
     private String name;
 
-    public Passimian(String name) {
-        this.hp = 100.0;
-        this.attack = 120.0;
-        this.defense = 90.0;
-        this.specialAttack = 40.0;
+    public Cottonee(String name) {
+        this.hp = 40.0;
+        this.attack = 27.0;
+        this.defense = 60.0;
+        this.specialAttack = 37.0;
         this.name = name;
     }
 
