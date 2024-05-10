@@ -7,6 +7,8 @@ public class Passimian implements Pokemon{
     private double defense;
     private double specialAttack;
     private String name;
+    private boolean isFight = false;
+    private boolean isSleep = false;
 
     public Passimian(String name) {
         this.hp = 100.0;
@@ -42,10 +44,12 @@ public class Passimian implements Pokemon{
     }
 
     @Override
-    public void fight() {
+    public boolean fight() {
+        return isFight;
     }
 
     @Override
-    public void sleep() {
+    public boolean sleep() {
+        return isSleep;
     }
 }

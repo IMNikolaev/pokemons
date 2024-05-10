@@ -6,6 +6,6 @@ public interface Pokemon {
     double getDefense();
     double getSpecialAttack();
     String getName();
-    void fight();
-    void sleep();
+    boolean fight();
+    boolean sleep();
 }
