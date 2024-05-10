@@ -17,5 +17,6 @@ public class Main {
         pokemonService.createCottonee("Cottonee");
         pokemonService.createPassimian("Passimian");
         System.out.println(pokemonService.getPokemons());
+
     }
 }
