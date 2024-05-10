@@ -9,6 +9,8 @@ public class Cottonee implements Pokemon{
     private double defense;
     private double specialAttack;
     private String name;
+    private boolean isFight = false;
+    private boolean isSleep = false;
 
     public Cottonee(String name) {
         this.hp = 40.0;
@@ -44,10 +46,12 @@ public class Cottonee implements Pokemon{
     }
 
     @Override
-    public void fight() {
+    public boolean fight() {
+        return isFight;
     }
 
     @Override
-    public void sleep() {
+    public boolean sleep() {
+        return isSleep;
     }
 }
