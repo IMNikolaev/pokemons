@@ -1,6 +1,8 @@
 package rest_example.entity;
 
+import lombok.ToString;
 
+@ToString
 public class Whimsicott implements Pokemon{
     private double hp;
     private double attack;

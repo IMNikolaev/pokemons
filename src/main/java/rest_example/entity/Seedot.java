@@ -1,6 +1,8 @@
 package rest_example.entity;
 
+import lombok.ToString;
 
+@ToString
 public class Seedot implements Pokemon{
     private double hp;
     private double attack;

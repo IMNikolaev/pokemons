@@ -2,7 +2,6 @@ package rest_example;
 
 import rest_example.entity.Pokemon;
 import rest_example.repository.PokemonRepository;
-import rest_example.scenario.Battle;
 import rest_example.service.BattleService;
 import rest_example.service.PokemonService;
 
@@ -18,7 +17,7 @@ public class Main {
         Pokemon pokemon4= pokemonService.createSeedot("Seedot");
         Pokemon pokemon5= pokemonService.createWhimsicott("Whimsicott");
 
-        //System.out.println(pokemonService.getPokemons());
+        System.out.println(pokemonService.getPokemons());
 
         battleService.getBattle();
     }

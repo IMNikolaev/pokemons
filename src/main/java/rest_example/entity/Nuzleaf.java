@@ -1,6 +1,8 @@
 package rest_example.entity;
 
+import lombok.ToString;
 
+@ToString
 public class Nuzleaf implements Pokemon{
     private double hp;
     private double attack;

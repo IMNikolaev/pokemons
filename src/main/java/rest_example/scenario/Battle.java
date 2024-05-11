@@ -55,31 +55,34 @@ public class Battle {
         double p2HP = p2.getHp();
         int p1Point = 0;
         int p2Point = 0;
+        Pokemon winner = Battle(p1,p2);
+        if (winner!= null){
+            if(winner.equals(p1)){
+                p1Point+=1;
+            }
+            p1.setHp(p1HP);
+            p2.setHp(p2HP);
 
-        if(Battle(p1,p2).equals(p1)){
-            p1Point+=1;
-        }
-        p1.setHp(p1HP);
-        p2.setHp(p2HP);
-
-        if(Battle(p1,p2).equals(p2)){
+            if(winner.equals(p2)){
             p2Point+=1;
         }
-        p1.setHp(p1HP);
-        p2.setHp(p2HP);
-
-        if(Battle(p2,p1).equals(p1)){
-            p1Point+=1;
-        }
-
-        p1.setHp(p1HP);
-        p2.setHp(p2HP);
-        if(Battle(p2,p1).equals(p2)){
-            p2Point+=1;
         }
         p1.setHp(p1HP);
         p2.setHp(p2HP);
+        Pokemon winner2 = Battle(p2,p1);
+        if (winner2 != null) {
+            if (winner2.equals(p1)) {
+                p1Point += 1;
+            }
 
+            p1.setHp(p1HP);
+            p2.setHp(p2HP);
+            if (winner2.equals(p2)) {
+                p2Point += 1;
+            }
+        }
+        p1.setHp(p1HP);
+        p2.setHp(p2HP);
         if (p1Point>p2Point){
             return p1;
         }
